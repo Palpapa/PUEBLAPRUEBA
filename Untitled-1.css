@@ -1,0 +1,229 @@
+
+.main-container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo {
+    max-width: 70px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.slideshow-container {
+    position: top;
+    max-width: 150%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slideshow {
+    position: top;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reservation-bars {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.reservation-bar {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.reservation-bar h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.reservation-bar input, .reservation-bar button {
+    width: 90%;
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.reservation-bar button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.reservation-bar button:hover {
+    background-color: #000000;
+
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-section {
+    flex: 1;
+    max-width: 40%;
+}
+
+.info-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.carousel {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.carousel button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .left {
+    margin-right: 10px;
+}
+
+.carousel .right {
+    margin-left: 10px;
+}
+
+.overlay-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.info-section, .contact-section {
+    text-align: left;
+    padding: 20px;
+}
+.info-section img {
+    float: right;
+    margin-left: 20px;
+    max-width: 200px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, p, a {
+    font-family: 'Poppins', sans-serif;
+}

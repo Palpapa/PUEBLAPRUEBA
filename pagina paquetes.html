@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes de Viaje Puebla</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .package-card {
+            background-color: #fff;
+            border-radius: 15px;
+            width: 300px;
+            padding: 20px;
+            margin: 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .package-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .package-card h3 {
+            font-size: 20px;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .package-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .package-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+
+
+        .arrow-button {
+            background-color: rgba(255, 0, 204, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+
+        .left-arrow {
+            left: 10px;
+        }
+
+        .right-arrow {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+
+        <div class="slider" id="slider">
+            <div class="package-card">
+                <img src="https://i.ibb.co/2PPHhdL/peubla.png" alt="Paquete 1">
+                <h3>Tour a Cholula</h3>
+                <p>Visita la famosa pirámide de Cholula y su iglesia, un lugar lleno de historia y cultura.</p>
+                <div class="price">$500 MXN</div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://i.ibb.co/2PPHhdL/peubla.png" alt="Paquete 2">
+                <h3>Tour por Puebla Capital</h3>
+                <p>Recorre el Centro Histórico de Puebla, patrimonio mundial de la humanidad, con su arquitectura colonial.</p>
+                <div class="price">$400 MXN</div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://i.ibb.co/2PPHhdL/peubla.png" alt="Paquete 3">
+                <h3>Excursión a Atlixco</h3>
+                <p>Disfruta de un recorrido por Atlixco, conocido por su clima templado y las vistas del volcán Popocatépetl.</p>
+                <div class="price">$450 MXN</div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2020/10/GuacamoleProject_Cuetzalan_parroquia-san-francisco_md_ok-700x680.jpg" alt="Paquete 4">
+                <h3>Escapada a Cuetzalan</h3>
+                <p>Sumérgete en el misticismo de Cuetzalan, conocido por su belleza natural y la cultura indígena Totonacapan.</p>
+                <div class="price">$600 MXN</div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://gappn.mx/wp-content/uploads/2022/08/puebla-tehuacan-01.jpg" alt="Paquete 5">
+                <h3>Tour por Tehuacán</h3>
+                <p>Explora Tehuacán, famosa por sus bellos paisajes y el famoso desierto de la región.</p>
+                <div class="price">$550 MXN</div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://themixtecatimes.mx/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-09-at-13.29.31-scaled.jpeg" alt="Paquete 6">
+                <h3>Excursión a Izúcar</h3>
+                <p>Recorre Izúcar de Matamoros, conocida por su arquitectura colonial y tradiciones.</p>
+                <div class="price">$420 MXN</div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://live.staticflickr.com/3179/2567462565_28eb035666_b.jpg" alt="Paquete 7">
+                <h3>Viaje a Chignahuapan</h3>
+                <p>Disfruta de un recorrido por Chignahuapan, famosa por sus aguas termales y su arquitectura tradicional.</p>
+                <div class="price">$650 MXN</div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://puebla.gob.mx/media/k2/items/cache/e7f4a61a7f36ac100d84e006fd72b342_L.jpg" alt="Paquete 8">
+                <h3>Explora Zacatlán</h3>
+                <p>Conoce Zacatlán, conocido por sus hermosos paisajes, manantiales y la famosa Ruta de las Manzanas.</p>
+                <div class="price">$700 MXN</div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://i.ibb.co/2PPHhdL/peubla.png" alt="Paquete 9">
+                <h3>Aventura en Tlatlauquitepec</h3>
+                <p>Disfruta de un día en Tlatlauquitepec, famoso por su belleza natural y cascadas.</p>
+                <div class="price">$600 MXN</div>
+            </div>
+        </div>
+
+    
+        <button class="arrow-button right-arrow" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.getElementById('slider');
+            const totalSlides = document.querySelectorAll('.package-card').length;
+            const slideWidth = document.querySelector('.package-card').offsetWidth + 20; // Ancho del paquete + márgenes
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    </script>
+</body>
+</html>
+
